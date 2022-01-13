@@ -3,7 +3,7 @@ pipeline {
     agent any
     
     environment {
-        PASS = credentials('registrypass') 
+        PASS = credentials('registrypath') 
     }
 
     stages {
