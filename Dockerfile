@@ -33,7 +33,7 @@ RUN curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-c
 
 RUN usermod -aG docker jenkins && \
     echo "jenkins:1234" | chpasswd && \
-    echo "root:1234"| chpasswd && \
-    /etc/init.d/ssh start
+    echo "root:1234"| chpasswd 
+#    /etc/init.d/ssh start
 
 USER jenkins
